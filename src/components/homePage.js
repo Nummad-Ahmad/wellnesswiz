@@ -1,12 +1,12 @@
 import style from '../styles/homePage.module.css';
 import { BsChatDots } from "react-icons/bs";
-import ModelImage from '../images/modelImage.png';
-import Blackheads from '../images/blackheads.jpeg';
-import Cysts from '../images/cysts.jpeg';
-import Whiteheads from '../images/whiteheads.jpeg';
-import Nodules from '../images/nodules.jpeg';
-import Pustules from '../images/pustules.jpeg';
-import Papules from '../images/papules.jpeg';
+import ModelImage from '../images/dr.png';
+import Cardio from '../images/cardiology.jpg';
+import Endo from '../images/endo.jpg';
+import Immuno from '../images/immuno.jpg';
+import Pulmo from '../images/pulmo.jpg';
+import Gastero from '../images/gastero.jpg';
+import Inf from '../images/inf.jpg';
 import Doctormeeting1 from '../images/doctormeeting1.jpeg';
 import Doctormeeting2 from '../images/doctormeeting2.jpeg';
 import Doctormeeting3 from '../images/doctormeeting3.jpeg';
@@ -66,11 +66,8 @@ export default function HomePage() {
             <div className={style.contentContainer}>
                 <div className={style.imgandtext}>
                     <div className={style.mototaglinediv}>
-                        <p className={style.text}>Your Personalized Companion for Smarter Acne Detection</p>
-                        <p className={style.tagline} >Personalized solutions for every skin type, backed
-                            by advanced detection and prevention tools. Using advanced AI and healthcare expertise,
-                            our chatbot delivers personalized recommendations to address unique skin concerns. Detect
-                            your acne type to get started.
+                        <p className={style.text}>Your Personalized Companion for Smarter Health Care</p>
+                        <p className={style.tagline} >Personalized solutions for every individual, backed by advanced detection and prevention tools. Using cutting-edge AI and medical expertise, our chatbot provides tailored health recommendations to address your unique concerns. Get started today for smarter, proactive healthcare.
                         </p>
                     </div>
                     <img className={`${style.img} ${isAnimated1 ? style.animateImg : ''}`} src={ModelImage}></img>
@@ -79,38 +76,38 @@ export default function HomePage() {
                     <BsChatDots size={20} color='white' />
                 </div>
                 <p className={style.treatments}>
-                    Types of Acne
+                    Disciplines treated
                 </p>
                 <div className={style.acnecon}>
                     <div className={style.acnebox}>
-                        <h2>Blackheads</h2>
-                        <img src={Blackheads} alt="Blackheads" />
+                        <h2>Cardiology</h2>
+                        <img src={Cardio} alt="Blackheads" />
                         <p className={style.diseaseDesc}>Blackheads are open comedones caused by clogged pores filled with oil and dead skin cells. They appear as small, dark spots on the skin due to oxidation.</p>
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Whiteheads</h2>
+                        <h2>Pulmonology</h2>
                         <p className={style.diseaseDesc}>Whiteheads are closed comedones caused by clogged pores with oil and skin cells. They remain under the skin, appearing as white or flesh-colored bumps.</p>
-                        <img src={Whiteheads} height='100%' alt="Whiteheads" />
+                        <img src={Pulmo} height='100%' alt="Whiteheads" />
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Nodules</h2>
+                        <h2>Endocrinology</h2>
                         <p className={style.diseaseDesc}>Nodules are severe acne lesions that develop deep within the skin. They are painful, hard, and can leave permanent scars if not treated effectively.</p>
-                        <img src={Nodules} alt="Nodules" />
+                        <img src={Endo} alt="Nodules" />
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Pustules</h2>
+                        <h2>Gasteroentrology</h2>
                         <p className={style.diseaseDesc}>Pustules are inflamed pimples containing pus, appearing as red bumps. They often have a white or yellow center caused by bacterial infection.</p>
-                        <img src={Pustules} alt="Pustules" />
+                        <img src={Gastero} alt="Pustules" />
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Papules</h2>
+                        <h2>Immunology</h2>
                         <p className={style.diseaseDesc}>Papules are small, red, and inflamed pimples caused by irritation or infection in clogged pores. They are tender to the touch and lack visible pus.</p>
-                        <img src={Papules} alt="Pustules" />
+                        <img src={Immuno} alt="Pustules" />
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Cysts</h2>
+                        <h2>Infections</h2>
                         <p className={style.diseaseDesc}>Cysts are large, painful, and pus-filled acne lesions that form deep under the skin. They are severe and often require professional treatment to prevent scarring.</p>
-                        <img src={Cysts} alt="Cysts" />
+                        <img src={Inf} alt="Cysts" />
                     </div>
                 </div>
                 <div className={style.lightbluecontainer}>
@@ -148,7 +145,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <FaSackDollar size={20} color='rgb(212, 232, 255)' />
+                                <FaSackDollar size={20} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Cost affective</p>
                         </div>
@@ -158,7 +155,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <MdAccessTime size={20} color='rgb(212, 232, 255)' />
+                                <MdAccessTime size={20} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/7 Availability</p>
                         </div>
@@ -168,7 +165,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <IoAccessibility size={20} color='rgb(212, 232, 255)' />
+                                <IoAccessibility size={20} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Accessibility</p>
                         </div>
@@ -178,7 +175,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <GrSecure size={20} color='rgb(212, 232, 255)' />
+                                <GrSecure size={20} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Privacy</p>
                         </div>
@@ -201,8 +198,8 @@ export default function HomePage() {
                             blackheads, whiteheads, or pustules.
                         </p>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <h1>01</h1>
-                            <CiCircleCheck size={54} style={{ color: 'rgb(0, 51, 102' }} />
+                            <h1 style={{ color: '#03DAC6' }}>01</h1>
+                            <CiCircleCheck size={54} style={{ color: '#03DAC6' }} />
                         </div>
                     </div>
                     <div className={`${style.advbox} ${style.adv}`}>
@@ -213,8 +210,8 @@ export default function HomePage() {
                             </p>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <h1>02</h1>
-                            <CiCircleCheck size={54} style={{ color: 'rgb(0, 51, 102' }} />
+                            <h1 style={{ color: '#03DAC6' }}>02</h1>
+                            <CiCircleCheck size={54} style={{ color: '#03DAC6' }} />
                         </div>
                     </div>
                     <div className={`${style.advbox} ${style.adv}`}>
@@ -225,8 +222,8 @@ export default function HomePage() {
                             </p>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <h1>03</h1>
-                            <CiCircleCheck size={54} style={{ color: 'rgb(0, 51, 102' }} />
+                            <h1 style={{ color: '#03DAC6' }}>03</h1>
+                            <CiCircleCheck size={54} style={{ color: '#03DAC6' }} />
                         </div>
                     </div>
                     <div className={`${style.advbox} ${style.adv}`}>
@@ -236,9 +233,9 @@ export default function HomePage() {
                                 Patients can get immediate answers to queries about symptoms, medications, or appointments without waiting for a human representative.
                             </p>
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', justifySelf: 'flex-end' }}>
-                            <h1>04</h1>
-                            <CiCircleCheck size={54} style={{ color: 'rgb(0, 51, 102' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                            <h1 style={{ color: '#03DAC6' }}>04</h1>
+                            <CiCircleCheck size={54} style={{ color: '#03DAC6' }} />
                         </div>
                     </div>
                 </div>
@@ -250,7 +247,7 @@ export default function HomePage() {
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
                                 {/* <IoMdCloudUpload size={20} color='rgb(212, 232, 255)' /> */}
-                                <p style={{ margin: '0px', fontSize: '25px', color: 'white' }}>1</p>
+                                <p style={{ margin: '0px', fontSize: '25px', color: 'black' }}>1</p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Upload image</p>
                         </div>
@@ -260,7 +257,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <p style={{ margin: '0px', fontSize: '25px', color: 'white' }}>2</p>
+                                <p style={{ margin: '0px', fontSize: '25px', color: 'black' }}>2</p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Get remedies</p>
                         </div>
@@ -270,7 +267,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <p style={{ margin: '0px', fontSize: '25px', color: 'white' }}>3</p>
+                                <p style={{ margin: '0px', fontSize: '25px', color: 'black' }}>3</p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Routine</p>
                         </div>
@@ -280,7 +277,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <p style={{ margin: '0px', fontSize: '25px', color: 'white' }}>4</p>
+                                <p style={{ margin: '0px', fontSize: '25px', color: 'black' }}>4</p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Feedback</p>
                         </div>

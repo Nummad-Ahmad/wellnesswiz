@@ -1,5 +1,5 @@
 import style from '../styles/footer.module.css';
-import Logo from '../images/logoWhite.jpg';
+import Logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {

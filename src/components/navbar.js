@@ -6,7 +6,7 @@ import { CiPhone } from "react-icons/ci";
 import { MdOutlineLightbulb } from "react-icons/md";
 import { GiMedicines } from "react-icons/gi";
 import { useEffect, useState } from 'react';
-import logo from '../images/logoWhite.jpg';
+import logo from '../images/logo.png';
 import { IoHomeOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';

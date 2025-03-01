@@ -1,7 +1,7 @@
  .footer {
     height: 170px;
     width: 100%;
-    background-color: rgb(61, 82, 163);
+    background-color: rgb(18, 18, 18);
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;

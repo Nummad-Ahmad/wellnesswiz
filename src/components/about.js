@@ -14,6 +14,12 @@ import splitFaceMale from '../images/splitFaceMale.jpeg';
 import splitFaceFemale from '../images/splitFaceFemale.jpeg';
 import HyperPigmentation from "../images/hyperPigmentation.jpg";
 import Footer from "./footerComponent";
+import Cardio from '../images/cardiology.jpg';
+import Endo from '../images/endo.jpg';
+import Immuno from '../images/immuno.jpg';
+import Pulmo from '../images/pulmo.jpg';
+import Gastero from '../images/gastero.jpg';
+import Inf from '../images/inf.jpg';
 
 export default function About() {
     const [isAnimated, setIsAnimated] = useState(false);
@@ -21,16 +27,28 @@ export default function About() {
     const [index, setIndex] = useState(0);
     const [animationState, setAnimationState] = useState("slidein");
     const contentArray = [{
-        img: splitFaceMale,
-        text: 'The impact of acne on the skin is clearly demonstrated in the above picture.  Clear, healthy skin is often associated with confidence and vitality, while acne can lead to feelings of self-consciousness and lower self-esteem.'
+        img: Cardio,
+        text: 'Cardiovascular diseases (CVDs) are the leading cause of death globally. In 2019, an estimated 17.9 million people died from CVDs, representing 32% of all global deaths.'
     },
     {
-        img: splitFaceFemale,
-        text: 'The impact of acne on the skin is clearly demonstrated in the above picture.  Clear, healthy skin is often associated with confidence and vitality, while acne can lead to feelings of self-consciousness and lower self-esteem.'
+        img: Gastero,
+        text: 'Gastrointestinal diseases are a major global health concern, affecting millions of people each year. In 2019, an estimated 4.9 million deaths were attributed to digestive disorders, accounting for nearly 8% of global deaths.'
     },
     {
-        img: HyperPigmentation,
-        text: 'Hyperpigmentation is a common aftermath of acne, where dark spots or patches develop due to increased melanin production in response to skin inflammation. Early acne treatment and proper skincare can help minimize this risk.'
+        img: Pulmo,
+        text: 'Pulmonary diseases are a major global health concern. In 2019, an estimated 3.2 million people died from chronic respiratory diseases, accounting for nearly 6% of all global deaths.'
+    },
+    {
+        img: Endo,
+        text: 'Endocrine disorders are a major global health concern. In 2019, an estimated 1.5 million deaths were attributed to diabetes alone, with millions more affected by hormonal imbalances such as thyroid disorders and adrenal diseases.'
+    },
+    {
+        img: Inf,
+        text: 'Infectious diseases remain a major global health concern. In 2019, an estimated 13 million people died from infections, accounting for approximately 25% of all global deaths.'
+    },
+    {
+        img: Immuno,
+        text: 'Immunological and allergy-related diseases are a major global health concern. In recent years, an estimated 300 million people worldwide have been affected by asthma, and over 400 million suffer from allergic rhinitis.'
     }
     ];
 
@@ -98,7 +116,7 @@ export default function About() {
                             preventive measures to improve skin health, based on user inputs and uploaded images.</p>
                     </div>
                     <p className={style.services}>Services we offer</p>
-                    <div className={`${style.descriptioncontainer} ${isAnimated ? style.animate : ''}`}>
+                    <div className={`${style.descriptioncontainer}`}>
                         {/* <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
                             <div className={style.icondiv}>
@@ -109,59 +127,59 @@ export default function About() {
                         <div className={style.whiteline}></div>
                         <img src={Detection} width='85%' height={200} />
                         <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>By analyzing your skin type and identifying the specific acne category, we provide tailored recommendations to help you manage and treat acne more effectively. Our system delivers expert insights for healthier, clearer skin.</p>
-                    </div> */}
+                        </div> */}
                         <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
-                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
+                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '10px' }}>
                                 <div className={style.icondiv}>
-                                    <IoSearchOutline size={20} color="white" />
+                                    <IoSearchOutline size={30} color="black" />
                                 </div>
-                                <p style={{ fontWeight: "bold", fontSize: '18px' }}>Acne detection</p>
+                                <p style={{ fontWeight: "bold", fontSize: '18px', color: 'white' }}>Disease detection</p>
                             </div>
                             <div className={style.whiteline}></div>
-                            <img style={{margin: '0px auto'}} src={Detection} width='90%' height={200} />
-                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>By analyzing your skin type and identifying the specific acne category, we provide tailored recommendations to help you manage and treat acne more effectively.</p>
+                            <img style={{ margin: '0px auto' }} src={Detection} width='90%' height={200} />
+                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', color: 'white' }}>By analyzing your symptoms and identifying potential disease patterns, we provide tailored recommendations to help you manage your health more effectively.</p>
                         </div>
                         <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
-                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
+                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '10px' }}>
                                 <div className={style.icondiv}>
-                                    <MdOutlineHealthAndSafety size={20} color="white" />
+                                    <MdOutlineHealthAndSafety size={30} color="black" />
                                 </div>
-                                <p style={{ fontWeight: "bold", fontSize: '18px' }}>Preventive measures</p>
+                                <p style={{ fontWeight: "bold", fontSize: '18px', color: 'white' }}>Preventive measures</p>
                             </div>
                             <div className={style.whiteline}></div>
-                            <img style={{margin: '0px auto'}} src={DoctorMeeting3} width='90%' height={200} />
-                            <p style={{ margin: '0px 20px', fontSize: '15px', margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Prevention is essential for clear skin. Our app offers personalized tips, from skincare routines to lifestyle and dietary changes, all tailored to your skin type.</p>
+                            <img style={{ margin: '0px auto' }} src={DoctorMeeting3} width='90%' height={200} />
+                            <p style={{ margin: '0px 20px', fontSize: '15px', margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', color: 'white' }}>Prevention is essential for health. Our app offers personalized tips, from healthcare routines to lifestyle and dietary changes, all tailored to your disease.</p>
                         </div>
                         <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
-                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
+                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '10px' }}>
                                 <div className={style.icondiv}>
-                                    <AiOutlineMedicineBox size={20} color="white" />
+                                    <AiOutlineMedicineBox size={30} color="black" />
                                 </div>
-                                <p style={{ fontWeight: "bold", fontSize: '18px' }}>Medication</p>
+                                <p style={{ fontWeight: "bold", fontSize: '18px', color: 'white' }}>Medication</p>
                             </div>
                             <div className={style.whiteline}></div>
-                            <img style={{margin: '0px auto'}} src={Medication} width='90%' height={200} />
-                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Based on your acne type and skin condition, we provide personalized medication suggestions, including over-the-counter options and professional treatments.</p>
+                            <img style={{ margin: '0px auto' }} src={Medication} width='90%' height={200} />
+                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', color: 'white' }}>Based on your disease, we provide personalized medication suggestions, including over-the-counter options and professional treatments.</p>
                         </div>
                         <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
-                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
+                            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '10px' }}>
                                 <div className={style.icondiv}>
-                                    <GrSecure size={20} color="white" />
+                                    <GrSecure size={30} color="black" />
                                 </div>
-                                <p style={{ fontWeight: "bold", fontSize: '18px' }}>User privacy</p>
+                                <p style={{ fontWeight: "bold", fontSize: '18px', color: 'white' }}>User privacy</p>
                             </div>
                             <div className={style.whiteline}></div>
-                            <img style={{margin: '0px auto'}} src={Privacy} width='90%' height={200} />
-                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>We ensure all your personal and skin data is kept secure and confidential. Our app protects your anonymity, with no sharing of information to third parties.</p>
+                            <img style={{ margin: '0px auto' }} src={Privacy} width='90%' height={200} />
+                            <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', color: 'white' }}>We ensure all your personal data is kept secure and confidential. Our app protects your anonymity, with no sharing of information to third parties.</p>
                         </div>
                     </div>
                     <div className={style.whyitmattersdiv}>
-                        <p style={{ fontSize: '40px', fontWeight: '500', marginTop: '160px', marginBottom: '30px' }}>Why It Matters</p>
+                        <p style={{ fontSize: '40px', fontWeight: '500', marginTop: '70px', marginBottom: '30px', color: "white" }}>Why It Matters</p>
                         <div className={style.mattercontainer}>
                             <div className={`${style.matters} ${style[animationState]}`}>
-                                <img style={{margin: '0px auto'}} src={contentArray[index]['img']} className={style.matterimg}>
+                                <img style={{ margin: '0px auto' }} src={contentArray[index]['img']} className={style.matterimg}>
                                 </img>
-                                <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', textAlign: 'center' }}>{contentArray[index]['text']}</p>
+                                <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4', textAlign: 'center', color: "white" }}>{contentArray[index]['text']}</p>
                             </div>
                         </div>
                     </div>
