@@ -57,7 +57,7 @@ export default function () {
                     How it works
                 </button>
                 <button className={`${index == 4 ? style.btnActive : style.btnInactive}`} onClick={()=> {navigate('/acnetypes'); updateIndex(4)}}>
-                    Acne Types
+                    Specialized Areas
                 </button>
                 <button className={`${index == 2 ? style.btnActive : style.btnInactive}`} onClick={()=> {navigate('/contact'); updateIndex(2)}}>
                     Contact us

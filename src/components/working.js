@@ -69,11 +69,11 @@ export default function Working() {
                             <div className={style.icondiv}>
                                 <p className={style.number}>5</p>
                             </div>
-                            <p className={style.title}>Acne types</p>
+                            <p className={style.title}>Specialized Areas</p>
                         </div>
                         <div className={style.whiteline}></div>
                         <img className={style.loginpic} src={AcneTypes}></img>
-                        <div className={style.textdiv}>The <span style={{fontWeight: 'bold', fontSize: '20px'}}>Acne Types</span> page provides an overview of the different forms of acne, helping users identify and understand their skin concerns. It categorizes acne into various types, such as blackheads, whiteheads, nodules, and cystic acne, with brief descriptions of each. This page aims to educate users, enabling them to make informed decisions about their skincare and treatment options.</div>
+                        <div className={style.textdiv}>The <span style={{fontWeight: 'bold', fontSize: '20px'}}>Specialized Areas</span> page provides an overview of the different areas of diseases treated, helping users identify and understand their health concerns. It categorizes diseases into various categories, such as cardiology, pulmonology, immunology etc with brief descriptions of each. This page aims to educate users, enabling them to make informed decisions about their healthcare and treatment options.</div>
 
                     </div>
                 </div>

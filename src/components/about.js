@@ -100,20 +100,20 @@ export default function About() {
                 <div className={style.container}>
                     <div className={style.herosection}>
                         <div className={style.heroheadingdiv}>
-                            <p className={style.heroheading}>Combining AI and healthcare insights to assist users in their skincare free of cost</p>
-                            <p className={style.herodesc}>In today’s busy world, skincare often takes a backseat as hectic routines and the belief that it’s costly discourage many. However, maintaining healthy skin doesn’t have to be expensive or time-consuming. Simple habits like cleansing, moisturizing, and applying sunscreen can easily fit into a packed schedule, keeping your skin healthy and protected without breaking the bank.</p>
+                            <p className={style.heroheading}>Combining AI and healthcare insights to assist users in their healthcare free of cost</p>
+                            <p className={style.herodesc}>In today’s fast-paced world, healthcare often takes a backseat as busy schedules and the perception of high costs discourage many. However, maintaining good health doesn’t have to be expensive or time-consuming. Simple habits like staying hydrated, eating a balanced diet, exercising regularly, and getting routine check-ups can easily fit into a busy lifestyle, promoting overall well-being without financial strain.</p>
                         </div>
                         <img src={DoctorMeeting3} className={`${style.heroimg} ${isFade ? style.fadein : ''}`} />
                     </div>
                     <div className={style.ouraimdiv}>
                         <p style={{ margin: '30px', fontSize: '40px', fontWeight: '500', color: 'white' }}>Our aim</p>
                         <p className={style.aimdesc}>Using advanced AI and healthcare expertise, our chatbot
-                            delivers personalized recommendations to address unique skin
+                            delivers personalized recommendations to address unique health
                             concerns.<p className={style.conditionallyhiddentext}> The system aims to make acne care accessible,
-                                efficient, and personalized while educating users about proper skincare practices.</p></p>
-                        <p className={style.aimdesc} style={{ marginTop: '20px' }}>To create an intelligent chatbot that assists users in identifying acne types, suggesting
-                            appropriate skincare routines, recommending over-the-counter treatments, and providing
-                            preventive measures to improve skin health, based on user inputs and uploaded images.</p>
+                                efficient, and personalized while educating users about proper and timely healthcare advices.</p></p>
+                        <p className={style.aimdesc} style={{ marginTop: '20px' }}>To create an intelligent chatbot that assists users in identifying disease types, suggesting
+                            appropriate healthcare routines, recommending over-the-counter treatments, and providing
+                            preventive measures to improve health, based on user inputs.</p>
                     </div>
                     <p className={style.services}>Services we offer</p>
                     <div className={`${style.descriptioncontainer}`}>
@@ -186,8 +186,8 @@ export default function About() {
                     <div className={style.herosection}>
                         <img src={AIHealthcare} className={`${style.heroimg} ${isFade ? style.fadein : ''}`} />
                         <div className={style.heroheadingdiv}>
-                            <p className={style.heroheading}>Custom-trained AI model for Detecting Acne</p>
-                            <p className={style.herodesc}>Revolutionizing skincare with a custom-trained AI model specifically designed for acne detection. This advanced solution accurately identifies acne types, provides preventive tips, and offers tailored treatment plans to promote healthier, clearer skin.</p>
+                            <p className={style.heroheading}>Custom-trained AI model for diagnosing diseases</p>
+                            <p className={style.herodesc}>Revolutionizing healthcare with a custom-trained AI model specifically designed for diagnosing diseases. This advanced solution accurately identifies the disease, provides preventive tips, and offers tailored treatment plans to promote healthier life.</p>
                         </div>
                     </div>
                 </div>

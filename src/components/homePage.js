@@ -76,49 +76,49 @@ export default function HomePage() {
                     <BsChatDots size={20} color='white' />
                 </div>
                 <p className={style.treatments}>
-                    Disciplines treated
+                    Specialized Areas
                 </p>
                 <div className={style.acnecon}>
                     <div className={style.acnebox}>
                         <h2>Cardiology</h2>
                         <img src={Cardio} alt="Blackheads" />
-                        <p className={style.diseaseDesc}>Blackheads are open comedones caused by clogged pores filled with oil and dead skin cells. They appear as small, dark spots on the skin due to oxidation.</p>
+                        <p className={style.diseaseDesc}>Cardiology is the branch of medicine that focuses on diagnosing, treating, and preventing diseases related to the heart and blood vessels.</p>
                     </div>
                     <div className={style.acnebox}>
                         <h2>Pulmonology</h2>
-                        <p className={style.diseaseDesc}>Whiteheads are closed comedones caused by clogged pores with oil and skin cells. They remain under the skin, appearing as white or flesh-colored bumps.</p>
+                        <p className={style.diseaseDesc}>Pulmonology is the branch of medicine that focuses on diagnosing, treating, and preventing diseases related to the respiratory system.</p>
                         <img src={Pulmo} height='100%' alt="Whiteheads" />
                     </div>
                     <div className={style.acnebox}>
                         <h2>Endocrinology</h2>
-                        <p className={style.diseaseDesc}>Nodules are severe acne lesions that develop deep within the skin. They are painful, hard, and can leave permanent scars if not treated effectively.</p>
+                        <p className={style.diseaseDesc}>Endocrinology is the branch of medicine that focuses on diagnosing, treating, and preventing disorders related to the endocrine system.</p>
                         <img src={Endo} alt="Nodules" />
                     </div>
                     <div className={style.acnebox}>
                         <h2>Gasteroentrology</h2>
-                        <p className={style.diseaseDesc}>Pustules are inflamed pimples containing pus, appearing as red bumps. They often have a white or yellow center caused by bacterial infection.</p>
+                        <p className={style.diseaseDesc}>Gastroenterology is the branch of medicine that focuses on diagnosing, treating, and preventing diseases related to the digestive system.</p>
                         <img src={Gastero} alt="Pustules" />
                     </div>
                     <div className={style.acnebox}>
                         <h2>Immunology</h2>
-                        <p className={style.diseaseDesc}>Papules are small, red, and inflamed pimples caused by irritation or infection in clogged pores. They are tender to the touch and lack visible pus.</p>
+                        <p className={style.diseaseDesc}>Immunology is the branch of medicine that focuses on diagnosing, treating, and preventing diseases related to the immune system.</p>
                         <img src={Immuno} alt="Pustules" />
                     </div>
                     <div className={style.acnebox}>
-                        <h2>Infections</h2>
-                        <p className={style.diseaseDesc}>Cysts are large, painful, and pus-filled acne lesions that form deep under the skin. They are severe and often require professional treatment to prevent scarring.</p>
+                        <h2>Infectiology</h2>
+                        <p className={style.diseaseDesc}>Infectiology is the branch of medicine that focuses on diagnosing, treating, and preventing diseases caused by bacteria, viruses, fungi, and parasites.</p>
                         <img src={Inf} alt="Cysts" />
                     </div>
                 </div>
                 <div className={style.lightbluecontainer}>
                     <div className={style.leftrightcontainer}>
                         <div className={style.leftdiv}>
-                            <p>Combining AI and healthcare insights to assist users in their skincare free of cost
+                            <p>Combining AI and healthcare insights to assist users in their healthcare free of cost
                             </p>
                         </div>
                         <div className={style.rightdiv}>
                             <p style={{ fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Using advanced AI and healthcare expertise, our chatbot
-                                delivers personalized recommendations to address unique skin concerns.</p>
+                                delivers personalized recommendations to address unique most of the health concern.</p>
                             <button onClick={() => navigate('/about')}>Read more</button>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <FaSackDollar size={20} color='black' />
+                                <FaSackDollar size={30} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Cost affective</p>
                         </div>
@@ -155,7 +155,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <MdAccessTime size={20} color='black' />
+                                <MdAccessTime size={30} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/7 Availability</p>
                         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <IoAccessibility size={20} color='black' />
+                                <IoAccessibility size={30} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Accessibility</p>
                         </div>
@@ -175,7 +175,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                             <div className={style.icondiv}>
-                                <GrSecure size={20} color='black' />
+                                <GrSecure size={30} color='black' />
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Privacy</p>
                         </div>
@@ -193,9 +193,7 @@ export default function HomePage() {
                     <div className={`${style.advbox} ${style.adv}`}>
                         <h2>Accurate Diagnosis</h2>
                         <p>
-                            The application uses advanced deep learning models to classify facial
-                            acne with precision, helping users identify specific acne types such as
-                            blackheads, whiteheads, or pustules.
+                        The application utilizes advanced natural language models to accurately classify various health conditions, enabling users to identify specific diseases and receive tailored insights for better diagnosis and management.
                         </p>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                             <h1 style={{ color: '#03DAC6' }}>01</h1>
@@ -249,10 +247,10 @@ export default function HomePage() {
                                 {/* <IoMdCloudUpload size={20} color='rgb(212, 232, 255)' /> */}
                                 <p style={{ margin: '0px', fontSize: '25px', color: 'black' }}>1</p>
                             </div>
-                            <p style={{ fontWeight: "bold", fontSize: '18px' }}>Upload image</p>
+                            <p style={{ fontWeight: "bold", fontSize: '18px' }}>Enter symptoms</p>
                         </div>
                         <div className={style.whiteline}></div>
-                        <p style={{ fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Upload image from your gallery to get started.</p>
+                        <p style={{ fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Enter your symptoms by chatting with AI to get started.</p>
                     </div>
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -262,7 +260,7 @@ export default function HomePage() {
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Get remedies</p>
                         </div>
                         <div className={style.whiteline}></div>
-                        <p style={{ fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Get remedies from our custom trained AI model.</p>
+                        <p style={{ fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Get remedies from our advanced AI model.</p>
                     </div>
                     <div className={`${style.advbox} ${style.adv}`} style={{ gap: '20px' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
