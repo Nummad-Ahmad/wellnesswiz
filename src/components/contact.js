@@ -32,7 +32,7 @@ export default function Contact() {
             setSending(true);
             const name = fname + " " + lname;
             console.log('e ', email);
-            axios.post('https://blemishbotbackend.vercel.app/feedback', { email, message, name }).then((response) => {
+            axios.post('https://wellnesswizbackend.vercel.app/feedback', { email, message, name }).then((response) => {
                 if (response.status === 200) {
                     toast.success(response.data.message || 'Feedback sent successfully!');
                     setSending(false);
@@ -61,7 +61,7 @@ export default function Contact() {
                         <p className={style.heading}>
                             Feel free to share your feedback
                         </p>
-                        <p style={{ margin: '0px' }}>
+                        <p style={{ margin: '0px', color: 'white' }}>
                             We value your thoughts and feedback! Please don't hesitate to share your suggestions, comments or queries.
                         </p>
                         <p style={{ marginTop: '30px', marginBottom: '10px', fontWeight: 'bold', fontSize: '18px' }}>First Name</p>

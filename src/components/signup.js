@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../images/logoWhite.png'
+import logo from '../images/logoNegative.png';
 import robot2 from '../images/robot2.png'
 import fb from '../images/fb.png';
 import google from '../images/google.png';
@@ -27,7 +27,7 @@ const Signup = () => {
       var valid = emailRegex.test(email);
       if (valid && password.length > 7 && password == confirmPass) {
         setLoading(true);
-        axios.post(`https://blemishbotbackend.vercel.app/signup`, { email, password, name }).then(result => {
+        axios.post(`https://wellnesswizbackend.vercel.app/signup`, { email, password, name }).then(result => {
           toast.success('Account created');
           navigate('/login', { replace: true });
         }).catch(error => {
@@ -56,16 +56,15 @@ const Signup = () => {
           </p>
           <img className={styles.logo} src={logo} alt="logo" />
           <p className={styles.secondHeading}>
-            Your Journey to Clearer Skin Starts Here! <br />
-            Understand Your Skin! <br />
+          Your Journey to Better Health Starts Here! <br />
+          Understand Your Body! <br />
             Treat It Right!
           </p>
-          <img className={styles.robot2} src={robot2} alt="flying robot" />
         </div>
       </div>
       <div className={styles.signupContainer}>
         <div className={styles.FormContainer}>
-          <h1 style={{ color: "#3D52A3" }}>Create Account</h1>
+          <h1 style={{ color: "white" }}>Create Account</h1>
           <div className={styles.inputContainer} action="">
             <input type="text" className={styles.input} value={name} onChange={(e) => setname(e.target.value)} placeholder="Full Name" />
             <input type="email" value={email} className={styles.input} onChange={(e) => setemail(e.target.value)} placeholder="Email Address" />
@@ -78,22 +77,17 @@ const Signup = () => {
                 onChange={handleCheckboxChange}
               />
               <p
-                style={{ marginLeft: '10px', display: 'inline' }}>Accept terms of service and privacy policy.</p>
+                style={{ marginLeft: '10px', display: 'inline', color: 'white' }}>Accept terms of service and privacy policy.</p>
             </label>
             <button className={styles.signupButton} onClick={handleSignup}>{loading ? 'Registering ...' : 'Sign Up'}</button>
           </div>
         </div>
 
         <div className={styles.thirdpartysignup}>
-          <h4 className={styles.LineText} style={{ fontSize: "18px" }}>Or Sign Up With</h4>
-          <div className={styles.icons}>
-            <img onClick={() => toast.error("Under development!")} src={google} height={50} />
-            <img onClick={() => toast.error("Under development!")} src={fb} height={50} />
-          </div>
           <p style={{ color: "grey", textAlign: "center", fontSize: '16px' }}>
             Already have an account?{" "}
             <span>
-              <p style={{ display: 'inline-block', fontSize: '18px', cursor: 'pointer' }} onClick={() => navigate('/login', { replace: true })}>Sign in</p>
+              <p style={{ display: 'inline-block', fontSize: '18px', cursor: 'pointer', color: 'white' }} onClick={() => navigate('/login', { replace: true })}>Sign in</p>
             </span>
           </p>
         </div>

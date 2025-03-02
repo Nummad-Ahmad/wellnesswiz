@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import robot from '../images/flyingRobot.png';
-import logo from '../images/logoWhite.png';
+import logo from '../images/logoNegative.png';
 import styles from '../styles/login.module.css';
-import fb from '../images/fb.png';
-import google from '../images/google.png';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import axios from 'axios';
@@ -26,7 +23,7 @@ const Login = () => {
       const valid = emailRegex.test(email);
       if (valid && password.length > 7) {
         setLoading(true);
-        axios.post(`https://blemishbotbackend.vercel.app/login`, { email, password })
+        axios.post(`https://wellnesswizbackend.vercel.app/login`, { email, password })
           .then(result => {
             Cookies.set('email', email, { expires: 365 * 100, path: '/' });
             Cookies.set('user', JSON.stringify(result.data.user), { expires: 365 * 100, path: '/' });
@@ -59,7 +56,7 @@ const Login = () => {
       setVerify(true);
       console.log('Verification Code:', verificationCode);
       axios
-        .post(`https://blemishbotbackend.vercel.app/verify`, { email, verificationCode })
+        .post(`https://wellnesswizbackend.vercel.app/verify`, { email, verificationCode })
         .then((response) => {
           if (response.status === 200) {
             toast.success(response.data.message || 'Account verified successfully!');
@@ -90,35 +87,12 @@ const Login = () => {
       toast.error('Enter a valid 6-digit code');
     }
   }
-  function googleLogin(){
-    // axios.get(`https://blemishbotbackend.vercel.app/googleauth`)
-    //   .then(result => {
-    //     Cookies.set('email', email, { expires: 365 * 100, path: '/' });
-    //     Cookies.set('user', JSON.stringify(result.data.user), { expires: 365 * 100, path: '/' });
-    //     // const verified = JSON.parse(Cookies.get("user")).isVerified;
-    //     // if (verified) {
-    //     toast.success('Login successful');
-    //     navigate('/chat', { replace: true });
-    //     // } else {
-    //     //   toast.success('Verify your account to get started');
-    //     //   setShowVerification(true);
-    //     //   setLoading(false);
-    //     // }
-    //   })
-    //   .catch(error => {
-    //     console.log(error);
-    //     const errorMessage = error?.response?.data?.error || 'Something went wrong!';
-    //     toast.error(errorMessage);
-    //     setLoading(false);
-    //   });
-    toast.error("Under development!");
-  }
   return (
     <>
       <div className={styles.main}>
         <div className={styles.loginContainer}>
           <div className={styles.FormContainer}>
-            <h1 style={{ color: "#3D52A3" }}>Welcome Back</h1>
+            <h1 style={{ color: "rgb(255, 255, 255)" }}>Welcome Back</h1>
             <div className={styles.inputContainer} action="">
               <input
                 type="text"
@@ -134,30 +108,20 @@ const Login = () => {
                 onChange={(e) => setPass(e.target.value)}
                 placeholder="Password"
               />
-              <span onClick={() => navigate('/forgotpassword')} style={{ margin: '0px', color: 'rgb(61, 82, 163', cursor: 'pointer', width: '140px' }}>Forgot password?</span>
+              <span onClick={() => navigate('/forgotpassword')} style={{ margin: '0px', color: 'white', cursor: 'pointer', width: '140px' }}>Forgot password?</span>
               <button className={styles.loginButton} onClick={handleLogin}>
                 {loading ? 'Signing in...' : 'Login'}
               </button>
             </div>
           </div>
           <div className={styles.thirdpartyLogin}>
-            <h4 className={styles.LineText} style={{ fontSize: "18px" }}>Or Login With</h4>
-            <div className={styles.icons}>
-              <img onClick={() => googleLogin()} src={google} height={50} alt="Google login" />
-              <img onClick={()=> toast.error("Under development!")} src={fb} height={50} alt="Facebook login" />
-            </div>
-            <p style={{ color: "grey", textAlign: "center", fontSize: '16px' }}>
-              Don't have an account?{" "}
-              <span>
-                <p
-                  style={{ display: 'inline-block', fontSize: '18px', cursor: 'pointer' }}
-                  onClick={() => navigate('/signup', { replace: true })}
-                >
-                  Sign up
-                </p>
-              </span>
-            </p>
-          </div>
+          <p style={{ color: "grey", textAlign: "center", fontSize: '16px' }}>
+            Don't have an account?{" "}
+            <span>
+              <p style={{ display: 'inline-block', fontSize: '18px', cursor: 'pointer', color: 'white' }} onClick={() => navigate('/signup', { replace: true })}>Sign up</p>
+            </span>
+          </p>
+        </div>
         </div>
 
         <div className={styles.WelcomeContainer}>
@@ -167,11 +131,10 @@ const Login = () => {
             </p>
             <img className={styles.logo} src={logo} alt="logo" />
             <p className={styles.secondHeading}>
-              Your Clear Skin Journey Awaits. <br />
-              Log In to Glow Forward!
+              Your Healthier Life Journey Awaits. <br />
+              Log In to Get Started!
             </p>
           </div>
-          <img className={styles.flyRobo} src={robot} alt="flying robot" />
         </div>
       </div>
       {showVerification && (

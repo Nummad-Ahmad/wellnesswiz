@@ -25,7 +25,7 @@
 //       var valid = emailRegex.test(email);
 //       if (valid && password.length > 7) {
 //         setLoading(true);
-//         axios.post(`https://blemishbotbackend.vercel.app/login`, { email, password }).then(result => {
+//         axios.post(`https://wellnesswizbackend.vercel.app/login`, { email, password }).then(result => {
 //           Cookies.set('email', email, { expires: 365 * 100, path: '/' });
 //           Cookies.set('user', JSON.stringify(result.data.user), { expires: 365 * 100, path: '/' });
 //           verified = JSON.parse(Cookies.get("user")).isVerified;
@@ -136,7 +136,7 @@ const ForgotPassword = () => {
             const valid = emailRegex.test(email);
             if (valid && password.length > 7) {
                 setLoading(true);
-                axios.post(`https://blemishbotbackend.vercel.app/forgotpassword`, { email })
+                axios.post(`https://wellnesswizbackend.vercel.app/forgotpassword`, { email })
                     .then(result => {
                         if (verified) {
                             toast.success('Login successful');
@@ -166,7 +166,7 @@ const ForgotPassword = () => {
             setVerify(true);
             console.log('Verification Code:', verificationCode);
             axios
-                .post(`https://blemishbotbackend.vercel.app/verifyforgotpassword`, { email, verificationCode, password })
+                .post(`https://wellnesswizbackend.vercel.app/verifyforgotpassword`, { email, verificationCode, password })
                 .then((response) => {
                     if (response.status === 200) {
                         toast.success('Password changed successfully!');
