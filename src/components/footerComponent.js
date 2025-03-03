@@ -21,13 +21,13 @@ export default function Footer() {
                         About
                     </p>
                     <p onClick={() => navigate('/working')} className={style.link}>
-                        How it works
+                        How it <br/>works
                     </p>
                     <p onClick={() => navigate('/acnetypes')} className={style.link}>
-                        Specialized Areas
+                        Specialized <br/>Areas
                     </p>
                     <p onClick={() => navigate('/contact')} className={style.link}>
-                        Contact us
+                        Contact <br/>us
                     </p>
                 </div>
             </div>

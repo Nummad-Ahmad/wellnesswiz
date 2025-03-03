@@ -4,7 +4,7 @@
     background-color: rgb(18, 18, 18);
     box-sizing: border-box;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     padding-bottom: 20px;
@@ -46,6 +46,6 @@
         display: none;
     }
     .link{
-        font-size: 14px;
+        font-size: 12px;
     }
 } 
