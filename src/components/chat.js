@@ -12,7 +12,6 @@ export default function Chat() {
             </div>
             <div style={{ display: 'flex' }}>
                 <div className={styles.contentContainer}>
-                    <div className={styles.webChat}>
                         <iframe
                             className={styles.iframeStyle}
                             src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/05/03/20241205032650-J0YSM9KA.json"
@@ -26,7 +25,6 @@ export default function Chat() {
                             `}
                         </style>
                     </div>
-                </div>
             </div>
         </div>
     );
