@@ -85,7 +85,7 @@ export default function Working() {
                             <p className={style.title}>Chat </p>
                         </div>
                         <div className={style.whiteline}></div>
-                        <div className={style.textdiv}>The <span style={{ fontWeight: 'bold', fontSize: '20px' }}>Chat</span> page enables seamless interaction within the application, providing users with a responsive and intuitive messaging experience. It facilitates real-time communication, allowing users to engage effortlessly with the chatbot or other participants. Designed for clarity and ease of use, this page ensures smooth conversations with a well-structured interface, making interactions more efficient and accessible. The first icon will start a new conversation and second icon will close the chat box on the top right corner. To open chat box again, refresh the page.</div>
+                        <div className={style.textdiv}>The <span style={{ fontWeight: 'bold', fontSize: '20px' }}>Chat</span> page enables seamless interaction within the application, providing users with a responsive and intuitive messaging experience. It facilitates real-time communication, allowing users to engage effortlessly with the chatbot or other participants. Designed for clarity and ease of use, this page ensures smooth conversations with a well-structured interface, making interactions more efficient and accessible. The icon in front of name will start a new conversation.</div>
                         <img className={style.loginpic} src={Chat}></img>
                     </div>
                     <div className={style.impPoints}>
