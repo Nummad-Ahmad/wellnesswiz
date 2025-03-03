@@ -73,7 +73,7 @@ export default function HomePage() {
                     <img className={`${style.img} ${isAnimated1 ? style.animateImg : ''}`} src={ModelImage}></img>
                 </div>
                 <div onClick={() => navigationFunction()} className={style.chat}>
-                    <BsChatDots size={20} color='white' />
+                    <BsChatDots size={30} color='black' />
                 </div>
                 <p className={style.treatments}>
                     Specialized Areas

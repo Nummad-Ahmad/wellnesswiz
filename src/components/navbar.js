@@ -98,7 +98,7 @@ export default function () {
                         </div>
                         <div style={{ borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }} onClick={()=> navigate('/acnetypes')}>
                             <GiMedicines size={20} color='black' />
-                            <li><a>Acne types</a></li>
+                            <li><a>Specialized Areas</a></li>
                         </div>
                         <div style={{ borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }} onClick={()=> navigate('/contact')}>
                             <CiPhone size={20} color='black' />

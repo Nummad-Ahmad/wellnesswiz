@@ -24,7 +24,7 @@ export default function Footer() {
                         How it works
                     </p>
                     <p onClick={() => navigate('/acnetypes')} className={style.link}>
-                        Acne types
+                        Specialized Areas
                     </p>
                     <p onClick={() => navigate('/contact')} className={style.link}>
                         Contact us
@@ -45,7 +45,7 @@ export default function Footer() {
                         How it works
                     </p>
                     <p onClick={() => navigate('/acnetypes')} className={style.link}>
-                        Acne types
+                        Specialized Areas
                     </p>
                     <p onClick={() => navigate('/contact')} className={style.link}>
                         Contact us
