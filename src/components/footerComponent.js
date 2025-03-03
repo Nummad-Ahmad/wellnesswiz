@@ -13,7 +13,7 @@ export default function Footer() {
                     <img className={style.footerlogo} src={Logo}></img>
                     <p style={{ fontSize: '16px', color: 'white' }}> Copy Rights Reserved | ©{currentYear}</p>
                 </div>
-                <div style={{ display: 'flex', gap: '10px' }}>
+                <div style={{ display: 'flex', gap: '20px' }}>
                     <p onClick={() => navigate('/')} className={style.link}>
                         Home
                     </p>
