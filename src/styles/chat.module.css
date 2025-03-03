@@ -32,8 +32,6 @@
 @media(max-width: 700px){
     .iframeStyle{
         height: 90%;
-        position: relative;
-        bottom: 20px; /* Increased from 10px to 20px to place iframe above 10px from bottom */
     }
     .contentContainer{
         margin-left: 0px;
