@@ -17,7 +17,7 @@ export default function Chat() {
                             className={styles.iframeStyle}
                             src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/05/03/20241205032650-J0YSM9KA.json"
                             allow="clipboard-write; microphone;"
-                            style={{ width: '95%', height: '95%', border: 'none' }}
+                            // style={{ width: '95%', height: '95%', border: 'none' }}
                         ></iframe>
                         <style>
                             {`
