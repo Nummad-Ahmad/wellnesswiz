@@ -88,6 +88,12 @@ export default function Working() {
                         <div className={style.textdiv}>The <span style={{ fontWeight: 'bold', fontSize: '20px' }}>Chat</span> page enables seamless interaction within the application, providing users with a responsive and intuitive messaging experience. It facilitates real-time communication, allowing users to engage effortlessly with the chatbot or other participants. Designed for clarity and ease of use, this page ensures smooth conversations with a well-structured interface, making interactions more efficient and accessible. The first icon will start a new conversation and second icon will close the chat box on the top right corner. To open chat box again, refresh the page.</div>
                         <img className={style.loginpic} src={Chat}></img>
                     </div>
+                    <div className={style.impPoints}>
+                        <p className={style.impHeading}>Key Points</p>
+                        <p className={style.impText}>1. When interacting with an AI model, it's best to start the conversation with a simple greeting like "Hi" to establish a smooth flow.</p>
+                        <p className={style.impText}>2. When interacting with an AI model, it's important to keep your query statement short and precise to ensure accurate and relevant responses. AI models process information based on the input they receive, so providing a clear and concise query helps eliminate ambiguity and improves response quality.</p>
+                        <p className={style.impText}>3. AI analyzes the given symptoms to determine potential diseases, so a clear and concise input helps minimize ambiguity and enhances diagnostic accuracy. Additionally, append identify disease with remedies and prevention measures in the end.</p>
+                    </div>
                 </div>
                 <Footer />
             </div>
