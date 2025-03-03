@@ -17,14 +17,14 @@
     overflow-y: auto;
 }
 .webChat{
-    height: 600px;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .iframeStyle{
-    min-width: 350px;
+    min-width: 330px;
     height: 98%;
     width: 58%;
     border: none;
