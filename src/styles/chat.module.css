@@ -56,8 +56,7 @@
 }
 @media(max-width: 700px){
     .iframeStyle{
-        height: calc(100% - 70px);
-        bottom: 10px;
+        height: 85%;
     }
     .historyContainer{
         display: none;
